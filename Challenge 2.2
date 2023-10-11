@@ -1,0 +1,33 @@
+def display_balance(self):
+    print("account balance for {}(account# {}): ₹{}".format(self.__account_holder_name,self.__account_number,self.__account_balance))
+#create an instance of the bankaccount class
+account=Bankaccount(account_number="123456789", account_holder_name="hari prabu",initial_balance=5000.0)
+#test deposit and withdrawal functionality
+
+account.display_balance()
+account.deposit(500.0)
+account.withdraw(200.0)
+account.withdraw(20000.0)
+account.display_balance()
+ #define the base class player 
+class player:
+  def play(self):
+    print("the player is playing cricket. ")
+
+#define the derived class batsman
+class batsman(player):
+  def play(self):
+    print(" the batsman is batting.")
+
+#define the derived class bowler
+class bowler(player):
+  def play(self):
+    print("the bowler is bowling.")
+
+#create objects of batsman and bowler classes 
+batsman = batsman()
+bowler = bowler()
+
+#call the play() method for each object 
+batsman.play()
+bowler.play(
